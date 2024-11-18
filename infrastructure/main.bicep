@@ -6,7 +6,7 @@ targetScope = 'resourceGroup'
  module appService 'appService.bicep' = {
   name: 'appService'
   params: {
-    appName: 'workshop-dnazghbicep-j-svensson-${environment}'
+    appName: 'workshop-dnazghbicep-J-Svensson-${environment}'
     location: 'centralus'
     environment: environment
   }
