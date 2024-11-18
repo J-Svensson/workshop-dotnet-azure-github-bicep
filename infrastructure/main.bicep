@@ -2,15 +2,15 @@
 param environment string
 
 var location  = 'centralus'
-    var myName = 'J-Svensson'
-    var appNameWithEnvironment = 'workshop-dnazghbicep-${myName}-${environment}'
+var myName = 'J-Svensson'
+var appNameWithEnvironment = 'workshop-dnazghbicep-${myName}-${environment}'
 
 targetScope = 'resourceGroup'
 
  module appService 'appservice.bicep' = {
   name: 'appservice'
   params: {
-    appName: 'workshop-dnazghbicep-${myName}-${environment}'
+    appName: appNameWithEnvironment
     location: location
     environment: environment
   }
