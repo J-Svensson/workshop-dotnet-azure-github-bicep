@@ -6,6 +6,6 @@ public class WorkshopDemoHealthCheck : IHealthCheck
 {
     public Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = default)
     {
-        return Task.FromResult(HealthCheckResult.Unhealthy("Something wrong."));
+        return Task.FromResult(HealthCheckResult.Healthy("Healthy"));
     }
 }
