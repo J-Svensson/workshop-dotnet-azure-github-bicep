@@ -7,8 +7,8 @@ var appNameWithEnvironment = 'workshop-dnazghbicep-${myName}-${environment}'
 
 targetScope = 'resourceGroup'
 
- module appService 'appservice.bicep' = {
-  name: 'appservice'
+ module appService 'appService.bicep' = {
+  name: 'appService'
   params: {
     appName: appNameWithEnvironment
     location: location
