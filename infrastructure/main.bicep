@@ -3,8 +3,8 @@ param environment string
 
 targetScope = 'resourceGroup'
 
- module appService 'appService.bicep' = {
-  name: 'appService'
+ module appService 'appservice.bicep' = {
+  name: 'appservice'
   params: {
     appName: 'workshop-dnazghbicep-J-Svensson-${environment}'
     location: 'centralus'
