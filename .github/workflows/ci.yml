@@ -1,4 +1,4 @@
-Artifactname: CI - Deploy App and Bicep
+name: CI - Deploy App and Bicep
 
 on:
   push:
