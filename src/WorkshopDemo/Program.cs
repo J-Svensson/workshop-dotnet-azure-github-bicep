@@ -22,6 +22,8 @@ builder.Configuration.AddAzureKeyVault(
     new Uri($"https://kv-J-Svensson-{builder.Environment.EnvironmentName}.vault.azure.net/"),
     new DefaultAzureCredential());
 
+Console.WriteLine($"My secret value is: {builder.Configuration.GetValue<string>("SomeSecret")}");
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
